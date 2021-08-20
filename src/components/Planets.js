@@ -8,7 +8,11 @@ async function fetchPlanets() {
 
 export default function Planets() {
 
-  const { data, status } = useQuery('planets', fetchPlanets)
+  const { data, status } = useQuery('planets', fetchPlanets, {
+    staleTime: 0,
+    // cacheTime: 10,
+    onSuccess: () => console.log('data fetched with no problemo')
+  })
   console.log(data)
 
   return (
