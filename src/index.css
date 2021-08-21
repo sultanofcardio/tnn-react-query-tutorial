@@ -29,6 +29,11 @@ button:hover{
   color: #fff;
   border-color: #fff;;
 }
+button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
 .content{
   text-align: left;
 }

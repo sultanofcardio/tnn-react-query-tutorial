@@ -1,9 +1,9 @@
-export default function Person({person}) {
+export default function Person({data}) {
   return (
       <div className='card'>
-        <h3>{person.name}</h3>
-        <p>Gender - {person.gender}</p>
-        <p>Birth Year - {person.birth_year}</p>
+        <h3>{data.name}</h3>
+        <p>Gender - {data.gender}</p>
+        <p>Birth Year - {data.birth_year}</p>
       </div>
   )
 }
